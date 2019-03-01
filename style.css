@@ -29,9 +29,21 @@ header {
 }
 
 #intro-section {
-  background-color: #0E1223;
+  background-color: #3D4873;
 }
-
+#wire-box {
+  border: 1px solid #EFC83E;
+  border-radius: 5px;
+}
+.divider {
+  width: 400px;
+  margin: 0 auto;
+  /* border: 1px solid #EFC83E; */
+  background-color: #3D4873;
+  position: relative;
+  top: -20px;
+  z-index: 1;
+}
 #tutorial-section {
     background-color: #0E1223;
     color: white;
