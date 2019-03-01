@@ -2,4 +2,4 @@
 test github slack
 2nd test
 some testing
-https://sad-goldberg-aeda32.netlify.com
+https://dev-group2.netlify.com/
