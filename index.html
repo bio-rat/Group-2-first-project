@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -129,6 +130,169 @@
     <!-- footer -->
 
 
+=======
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900" rel="stylesheet">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" href="/img/favicon2.png" type="image/x-icon">
+  <style>@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');</style>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top font-weight-bold nav-style box-shadow">
+    <div class="container">
+      <img id="logo" src="img/werewolf-logo.png" alt="Coderschool logo" />
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-items">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu-items">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase" href="#">Home</a>
+          </li>
+          <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase" href="#">Store</a>
+          </li>
+          <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container d-flex justify-content-start align-items-center">
+      <div class="box text-center text-light">
+        <h1 class="text-uppercase font-weight-bold">are you a wolf </h1>
+        <span class=" font-weight-bold">or</span>
+        <h1 class="text-uppercase font-weight-bold mt-3">a hunter</h1>
+        <h4 class="lead my-5">Join us</h4>
+        <div>
+          <a class="" href="#"><img src="/img/appstore.png" alt="appstore" width="180px"></a>
+          <a href="#"><img src="/img/google-play.png" alt="google play" width="180px"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- tutorial -->
+
+  <section id="intro-section">
+    <div class="container py-5">
+      <div class="text-center text-light">
+        <h3 class="font-weight-bold">INTRODUCTION</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <img class="img-fluid" src="/img/intro-werewolf.png" alt="wereworfs">
+
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <div><img src="/img/intro-wolfs.jpeg" alt="" width="300px"></div>
+        <div class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tutorial-section">
+
+  </section>
+  <div class="char">
+    <h2 class="text-center">Characters in the game</h2>
+    <div class="card-carousel">
+      <img class="my-card" src="img/char-normhuman.png" alt="">
+      <img class="my-card" src="img/char_human2.png" alt="">
+      <img class="my-card" src="img/char_wolf.png" alt="">
+      <img class="my-card" src="img/char_wolf2.png" alt="">
+      <img class="my-card" src="img/char-normhuman.png" alt="">
+      <img class="my-card" src="img/char_human2.png" alt="">
+      <img class="my-card" src="img/char_wolf.png" alt="">
+      <img class="my-card" src="img/char_wolf2.png" alt="">
+      <img class="my-card" src="img/char-normhuman.png" alt="">
+    </div>
+  </div>
+  <!-- footer -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $num = $('.my-card').length;
+    $even = $num / 2;
+    $odd = ($num + 1) / 2;
+
+    if ($num % 2 == 0) {
+      $('.my-card:nth-child(' + $even + ')').addClass('active');
+      $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+      $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+    } else {
+      $('.my-card:nth-child(' + $odd + ')').addClass('active');
+      $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+      $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+    }
+
+    $('.my-card').click(function () {
+      $slide = $('.active').width();
+      console.log($('.active').position().left);
+
+      if ($(this).hasClass('next')) {
+        $('.card-carousel').stop(false, true).animate({
+          left: '-=' + $slide
+        });
+      } else if ($(this).hasClass('prev')) {
+        $('.card-carousel').stop(false, true).animate({
+          left: '+=' + $slide
+        });
+      }
+
+      $(this).removeClass('prev next');
+      $(this).siblings().removeClass('prev active next');
+
+      $(this).addClass('active');
+      $(this).prev().addClass('prev');
+      $(this).next().addClass('next');
+    });
+
+
+    // Keyboard nav
+    $('html body').keydown(function (e) {
+      if (e.keyCode == 37) { // left
+        $('.active').prev().trigger('click');
+      } else if (e.keyCode == 39) { // right
+        $('.active').next().trigger('click');
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+>>>>>>> 119a0f26e7932adbfa7f16bfb3d9258cde2156ec
 </body>
 
 </html>

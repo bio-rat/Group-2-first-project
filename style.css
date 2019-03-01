@@ -11,7 +11,7 @@ gold #A46B06
 
 /* style for header */
 body {
-    font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 .container {
@@ -20,17 +20,16 @@ body {
 }
 
 header {
-    width: 100%;
-    height: 100vh;
-    background-image: url("/img/header-img.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} 
-     
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/header-img.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 #intro-section {
-background-color: #3D4873 ;
+  background-color: #0E1223;
 }
 
 #tutorial-section {
