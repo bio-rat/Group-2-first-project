@@ -13,6 +13,7 @@
 
 * {
   font-family: 'Cinzel Decorative', cursive;
+  /* text-transform: lowercase; */
 }
 
 /* STYLE FOR section.characters sliding cards */
@@ -25,10 +26,10 @@
 }
 
 .card-carousel .my-card {
-  height: 40%;
-  width: 20%;
+  height: 300px;
+  /* widt; */
   border-radius: 10px;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   -webkit-transform: scale(0.6) translateY(-2rem);
   transform: scale(0.6) translateY(-2rem);
@@ -39,10 +40,16 @@
   box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.75);
   /* border: 2px red solid; */
 }
-.my-card img {
-  
+div.card {
+  border: none;
+  background-color: #2A2924;
 }
-
+div.card h2 {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  font-family: 'Cinzel Decorative', cursive;
+}
 .card-carousel .my-card:after {
   position: absolute;
   height: 2px;
