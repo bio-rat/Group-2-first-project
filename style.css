@@ -2,6 +2,7 @@
 light puple #3D4873 
 dark brown #2A2924 
 dark blue #0E1223
+gold #A46B06
 
  */
 
@@ -11,6 +12,11 @@ dark blue #0E1223
 /* style for header */
 body {
   font-family: 'Cinzel Decorative', cursive;
+}
+
+.container {
+    /* border: 2px solid white; */
+    height: inherit;
 }
 
 header {
@@ -24,17 +30,36 @@ header {
 
 #intro-section {
   background-color: #0E1223;
-
 }
 
-.container {
-  border: 2px solid white;
-  height: inherit;
+#tutorial-section {
+    background-color: #0E1223;
+    color: white;
+}
+.node>img:hover {
+    width: 50px;
+}
+.feature-img>img:hover {
+    width: 406px;
 }
 
-.box {
-  border: 2px solid white;
-}
+
+h1 {
+    text-shadow: 3px 3px #3D4873;
+  }
+ 
+ .text-shadow  {
+     text-shadow: 3px 3px rgb(77, 49, 2);
+ }
+
+
+/* for testing only */
+ /* 
+ .box {
+    border: 2px solid white;
+}  */
+
+/* for testing only */
 
 .nav-style {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
