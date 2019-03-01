@@ -20,8 +20,6 @@ header {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-
-
 }
 
 #intro-section {
@@ -76,17 +74,18 @@ header {
   /* border: 2px red solid; */
 }
 
-div.card {
+div.char {
   border: none;
   background-image: url(img/char-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: none;
 }
 
-div.card h2 {
+div.char h2 {
   text-align: center;
   color: white;
-  margin-top: 50px;
+  paddding-top: 50px;
   font-family: 'Cinzel Decorative', cursive;
 }
 
