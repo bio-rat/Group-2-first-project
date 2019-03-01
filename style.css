@@ -42,7 +42,9 @@
 }
 div.card {
   border: none;
-  background-color: #2A2924;
+  background-image: url(img/char-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 div.card h2 {
   text-align: center;
