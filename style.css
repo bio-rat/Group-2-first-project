@@ -10,28 +10,173 @@ dark blue #0E1223
 
 /* style for header */
 body {
-    font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 header {
-    width: 100%;
-    height: 100vh;
-    background-image: url("/img/header-img.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-     
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/header-img.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
 }
 
 #intro-section {
-background-color: #0E1223;
+  background-color: #0E1223;
 
 }
+
 .container {
-    border: 2px solid white;
-    height: inherit;
+  border: 2px solid white;
+  height: inherit;
 }
+
 .box {
-    border: 2px solid white;
+  border: 2px solid white;
+}
+
+.nav-style {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  opacity: .9;
+  background-color: #2A2924;
+}
+
+.box-shadow {
+  box-shadow: 0px 6px 14px -2px rgba(0, 0, 0, 0.75);
+}
+
+#logo {
+  width: 100px;
+}
+
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 50px;
+}
+
+.card-carousel .my-card {
+  height: 300px;
+  /* widt; */
+  border-radius: 10px;
+  /* position: relative; */
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 1s;
+  box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.75);
+  /* border: 2px red solid; */
+}
+
+div.card {
+  border: none;
+  background-image: url(img/char-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.card h2 {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.card-carousel .my-card:after {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev,
+.card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+/* STYLE FOR section.characters sliding cards */
+.card-carousel .my-card:nth-child(0):before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(1):before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(2):before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(3):before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(4):before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+div.card {
+  margin: 0;
+  overflow-x: hidden;
 }
