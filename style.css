@@ -1,0 +1,37 @@
+/* 
+light puple #3D4873 
+dark brown #2A2924 
+dark blue #0E1223
+
+ */
+
+/* import cinzel font */
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900');
+
+/* style for header */
+body {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/img/header-img.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+     
+}
+
+#intro-section {
+background-color: #0E1223;
+
+}
+.container {
+    border: 2px solid white;
+    height: inherit;
+}
+.box {
+    border: 2px solid white;
+}
