@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900" rel="stylesheet">
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900');
+</style>
+
+<!--TODO master:
+        TODO1: [] change icon size 
+        TODO2: [] hamburger clickable
+        TODO3: [] footer of main page https://i.imgur.com/hiBH7oN.png
+        TODO4: [] change logo size
+        TODO5: [] card footer
+        TODO6: [] footer of mainpage
+        TODO6.1: [] social icons FB INSTA TWITER
+        TODO6.2: [] hover effects
+        TODO7: [] font https://hackmd.io/Krqa2ZffTgqsmKP1ALoFQA
+  -->
+
+<head>
+    <meta http-euiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="img" href="https://i.imgur.com/Kh32Y2h.png">
+    <meta charset="utf-8">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+    </style>
+
+
+</head>
+
+<body>
+    <!-- stuff
+        TODO1: change icon size
+        TODO2: hamburger clickable
+    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg p-4 mb-4 bg-white">
+        <a class="navbar-brand" href="#">
+            <div class="float-md-left float-lg-left float-sm-left ">
+                <img src="https://i.imgur.com/Kh32Y2h.png" alt="Brand name" style="width:50%;height:50%">
+
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <header class="v-header container">
+        <!--text-center mx-auto mt-5 py-5-->
+        <div class="full-screen-video-wrap">
+            <video src="vid/dense_fog.mp4" autoplay="true" loop="true"></video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1 id="about-scary">ABOUT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed officia voluptatibus tenetur
+                expedita mollitia est neque tempore quam unde?</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+        <div class="audio-scary" style="position:relative;top:160px;left:0px">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yb-o1oKvOcc?controls=0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" autoplay="true"
+                allowfullscreen="false"></iframe>
+        </div>
+
+        <!-- <div class="card-deck text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <img src="http://clipart-library.com/data_images/175610.png" alt="person1" width="120px">
+                </div>
+                <div class="card-body d-flex flex-column card-body">
+                    <h3 class="card-title">Name 1</h3>
+                    <p class="card-text font-weight-bolder mb-auto">Product owner</p>
+                    <ul class="list-unstyled my-4">
+                        <li>Task number 1</li>
+                        <li>Task number 2</li>
+                        <li>Task number 3</li>
+                        <li>Task number 4</li>
+                    </ul>
+
+                </div>
+                 Stuff
+                    TODO5.1: card footer
+                
+                <div class="card-footer"></div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <img src="http://clipart-library.com/data_images/175610.png" alt="person2" width="120px">
+                </div>
+                <div class="card-body">
+                    <h3 class="class-title">Name 2</h3>
+                    <p class="card-text font-weight-bold mb-auto">Scrum Master</p>
+                    <ul class="list-unstyled my-4">
+                        <li>task1</li>
+                        <li>task2</li>
+                        <li>task3</li>
+                    </ul>
+                </div>
+                Stuff
+                    TODO5.2: card footer
+                
+                <div class="card-footer"></div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <img src="http://clipart-library.com/data_images/175610.png" alt="person3" width="120px">
+                </div>
+                <div class="card-body">
+                    <h3 class="class-title">me</h3>
+                    <p class="card-text font-weight-bold mb-auto">poor guy who was ratted on</p>
+                </div>
+                stuff
+                    TODO5.3: card footer
+                
+                <div class="card-footer"></div>
+            </div>
+        -->
+    </header>
+    </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</body>
+
+</html>

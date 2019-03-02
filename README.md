@@ -1,1 +1,4 @@
-# Tu's Branch Group 2
+# Group 2
+## Tu's branch
+todo: About + Footer
+
