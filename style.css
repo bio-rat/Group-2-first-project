@@ -1,22 +1,21 @@
-/* 
+/*------------------------------HUONG SECTIONS ------------------------------------*/
+/* color theme
 light puple #3D4873 
 dark brown #2A2924 
 dark blue #0E1223
 gold #A46B06
-
  */
 
 /* import cinzel font */
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900');
 
-/* style for header */
+
 body {
   font-family: 'Cinzel Decorative', cursive;
 }
 
 .container {
-    /* border: 2px solid white; */
-    height: inherit;
+   height: inherit;
 }
 
 header {
@@ -31,47 +30,718 @@ header {
 #intro-section {
   background-color: #3D4873;
 }
+
 #wire-box {
   border: 1px solid #EFC83E;
   border-radius: 5px;
 }
+
 .divider {
   width: 400px;
   margin: 0 auto;
-  /* border: 1px solid #EFC83E; */
   background-color: #3D4873;
   position: relative;
   top: -20px;
   z-index: 1;
 }
+
 #tutorial-section {
-    background-color: #0E1223;
-    color: white;
-}
-.node>img:hover {
-    width: 50px;
-}
-.feature-img>img:hover {
-    width: 406px;
+  background-color: #0E1223;
+  color: white;
 }
 
-/* h1 {
-    text-shadow: 3px 3px #3D4873;
-  } */
- 
- .text-shadow  {
+.node:hover {
+  font-size: 2.2rem;
+}
+.node>img:hover {
+  width: 50px;
+}
+
+
+.feature-img>img:hover {
+  width: 406px;
+}
+
+
+.title {
+  text-shadow: 3px 3px #3D4873;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+
+}
+.text-small {
+  font-size: 1.2rem;
+}
+.text-shadow  {
      text-shadow: 3px 3px rgb(77, 49, 2);
  }
 
+/* ANIMATION IN HEADER */
 
-/* for testing only */
- /* 
- .box {
-    border: 2px solid white;
-}  */
+.title:hover {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  font-size: 2.6rem;
+  position: relative;
 
-/* for testing only */
+  -webkit-animation: horror-animation 6s infinite;
+  -moz-animation: horror-animation 6s infinite;
+  -o-animation: horror-animation 6s infinite;
+  animation: horror-animation 6s infinite;
+}
 
+@-webkit-keyframes horror-animation {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    left: 10px;
+    top: 10px;
+  }
+
+  5% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: 0;
+    top: -10px;
+  }
+
+  10% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    left: -5px;
+    top: -5px;
+  }
+
+  15% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+    top: 5px;
+  }
+
+  16% {
+    text-shadow: 0 0 5px #212121;
+    left: -10px;
+  }
+
+  17% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+  }
+
+  20% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: -10px;
+  }
+
+  25% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: -10px;
+  }
+
+  30% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    left: 0;
+  }
+
+  35% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 10;
+  }
+
+  36% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  37% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 0;
+  }
+
+  40% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.9);
+    left: 5px;
+  }
+
+  45% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 10px;
+  }
+
+  50% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+    left: 10px;
+  }
+
+  55% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: 0;
+  }
+
+  56% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  57% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: -10px;
+  }
+
+  60% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: 0;
+  }
+
+  65% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+  }
+
+  70% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    left: -10px;
+  }
+
+  75% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: 5px;
+  }
+
+  76% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  77% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: -10px;
+  }
+
+  80% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.1);
+    left: -10px;
+  }
+
+  85% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    left: 10px;
+  }
+
+  86% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  87% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    left: 5px;
+  }
+
+  90% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+    left: 5px;
+  }
+
+  95% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 5px;
+  }
+
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: 0;
+  }
+
+}
+@-moz-keyframes horror-animation {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    left: 10px;
+    top: 10px;
+  }
+
+  5% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: 0;
+    top: -10px;
+  }
+
+  10% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    left: -5px;
+    top: -5px;
+  }
+
+  15% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+    top: 5px;
+  }
+
+  16% {
+    text-shadow: 0 0 5px #212121;
+    left: -10px;
+  }
+
+  17% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+  }
+
+  20% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: -10px;
+  }
+
+  25% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: -10px;
+  }
+
+  30% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    left: 0;
+  }
+
+  35% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 10;
+  }
+
+  36% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  37% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 0;
+  }
+
+  40% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.9);
+    left: 5px;
+  }
+
+  45% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 10px;
+  }
+
+  50% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+    left: 10px;
+  }
+
+  55% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: 0;
+  }
+
+  56% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  57% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: -10px;
+  }
+
+  60% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: 0;
+  }
+
+  65% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+  }
+
+  70% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    left: -10px;
+  }
+
+  75% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: 5px;
+  }
+
+  76% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  77% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: -10px;
+  }
+
+  80% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.1);
+    left: -10px;
+  }
+
+  85% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    left: 10px;
+  }
+
+  86% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  87% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    left: 5px;
+  }
+
+  90% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+    left: 5px;
+  }
+
+  95% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 5px;
+  }
+
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: 0;
+  }
+
+}
+@-o-keyframes horror-animation {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    left: 10px;
+    top: 10px;
+  }
+
+  5% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: 0;
+    top: -10px;
+  }
+
+  10% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    left: -5px;
+    top: -5px;
+  }
+
+  15% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+    top: 5px;
+  }
+
+  16% {
+    text-shadow: 0 0 5px #212121;
+    left: -10px;
+  }
+
+  17% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+  }
+
+  20% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: -10px;
+  }
+
+  25% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: -10px;
+  }
+
+  30% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    left: 0;
+  }
+
+  35% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 10;
+  }
+
+  36% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  37% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 0;
+  }
+
+  40% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.9);
+    left: 5px;
+  }
+
+  45% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 10px;
+  }
+
+  50% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+    left: 10px;
+  }
+
+  55% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: 0;
+  }
+
+  56% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  57% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: -10px;
+  }
+
+  60% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: 0;
+  }
+
+  65% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+  }
+
+  70% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    left: -10px;
+  }
+
+  75% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: 5px;
+  }
+
+  76% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  77% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: -10px;
+  }
+
+  80% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.1);
+    left: -10px;
+  }
+
+  85% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    left: 10px;
+  }
+
+  86% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  87% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    left: 5px;
+  }
+
+  90% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+    left: 5px;
+  }
+
+  95% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 5px;
+  }
+
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: 0;
+  }
+
+} 
+@keyframes horror-animation {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    left: 10px;
+    top: 10px;
+  }
+
+  5% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: 0;
+    top: -10px;
+  }
+
+  10% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    left: -5px;
+    top: -5px;
+  }
+
+  15% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+    top: 5px;
+  }
+
+  16% {
+    text-shadow: 0 0 5px #212121;
+    left: -10px;
+  }
+
+  17% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+  }
+
+  20% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: -10px;
+  }
+
+  25% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: -10px;
+  }
+
+  30% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    left: 0;
+  }
+
+  35% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 10;
+  }
+
+  36% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  37% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 0;
+  }
+
+  40% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.9);
+    left: 5px;
+  }
+
+  45% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    left: 10px;
+  }
+
+  50% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+    left: 10px;
+  }
+
+  55% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: 0;
+  }
+
+  56% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  57% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    left: -10px;
+  }
+
+  60% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: 0;
+  }
+
+  65% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 0;
+  }
+
+  70% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    left: -10px;
+  }
+
+  75% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: 5px;
+  }
+
+  76% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  77% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    left: -10px;
+  }
+
+  80% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.1);
+    left: -10px;
+  }
+
+  85% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    left: 10px;
+  }
+
+  86% {
+    text-shadow: 0 0 5px #212121;
+    left: 0;
+  }
+
+  87% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    left: 5px;
+  }
+
+  90% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+    left: 5px;
+  }
+
+  95% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    left: 5px;
+  }
+
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    left: 0;
+  }
+
+}
+
+/* https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
+/* ANIMATION IN HEADER */
+
+/*------------------------------------HUONG SECTIONS----------------------------------------------*/
+
+/* -----------------------------------HUNG SECTIONS------------------------------------------------ */
 
 .nav-style {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
@@ -220,3 +890,5 @@ div.char {
   margin: 0;
   overflow-x: hidden;
 }
+
+/* -----------------------------------HUNG SECTIONS------------------------------------------------ */
