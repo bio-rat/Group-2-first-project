@@ -14,15 +14,16 @@ gold #A46B06
 }
 /* style for header */
 body {
+  
   font-family: 'Cinzel Decorative', cursive;
-  border:3px dotted red;
-  min-height: 2000px;
-  background-color:#2A2924;
+  
+  background-color: #2A2924;
+  height: 1880px;
   
 }
 
 .container {
-    border: 2px solid blue;
+    
     height: inherit;
 }
 
@@ -35,7 +36,6 @@ header {
   overflow-x:hidden;
 }
 .v-wrap{
-  border: 2px dashed green;
   
   margin:2px;
   padding:0;
@@ -48,7 +48,7 @@ header {
 .content{
   width: 100vw;
   height: 100vh;
-  border: 2px solid red;
+  
   align-items: center; 
   justify-content: center;
 }
@@ -61,10 +61,7 @@ header {
   background-repeat: no-repeat;
 }
 
-.content3{
-  border: 3px solid green;
-  height: 100vh;
-}
+
 
 
 h1 {
@@ -75,14 +72,6 @@ h1 {
      text-shadow: 3px 3px rgb(77, 49, 2);
  }
 
-
-/* for testing only */
- /* 
- .box {
-    border: 2px solid white;
-}  */
-
-/* for testing only */
 
 
 .nav-style {
@@ -99,3 +88,26 @@ h1 {
   width: 100px;
 }
 
+ul{
+  list-style-type: none;
+}
+
+footer {
+  
+  
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  height: 35 vh;
+  width:100%;
+}
+
+
+
+.flex-container{
+  display: flex;
+  flex-wrap:  nowrap;
+  justify-content: space-around; 
+}
