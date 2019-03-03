@@ -64,7 +64,9 @@ header {
   font-size: 2.2rem;
 
 }
-
+.text-small {
+  font-size: 1.2rem;
+}
 .text-shadow  {
      text-shadow: 3px 3px rgb(77, 49, 2);
  }
