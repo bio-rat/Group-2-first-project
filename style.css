@@ -27,7 +27,10 @@ body {
 ul{
   list-style-type: none;
 }
-
+.nav-item {
+  font-size: 14px;
+  color: #0094F3; 
+}
 
 footer {
   width: 100%;
