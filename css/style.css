@@ -1,17 +1,22 @@
+/* 
+light puple #3D4873 
+dark brown #2A2924 
+dark blue #0E1223
+gold #A46B06
+
+ */
+
+/* import cinzel font */
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900');
 
-*{
-    box-sizing: border-box;
+/* style for header */
+body {
+  font-family: 'Cinzel Decorative', cursive;
 }
 
-body{
-    margin:0;
-    font-family:'Cinzel Decorative', cursive;
-    font-size: 1rem;
-    line-height: 1.5;
-    color:white;
-    overflow-x: hidden;
-    z-index: 1;
+.container {
+    /* border: 2px solid white; */
+    height: inherit;
 }
 
 .v-header{
@@ -34,14 +39,12 @@ body{
     top:0;
     left:0;
     /*z-index: ;*/
-    width: 100wh;
-    height: 100vh;
+    object-fit: fill;
     overflow: hidden;
 }
 
 .full-screen-video-wrap video{
-    min-width: 100%;
-    min-height: 100%;
+    object-fit: fill;
 }
 /* .header-overlay {
     height: 100vh;
