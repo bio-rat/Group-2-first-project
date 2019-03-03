@@ -927,7 +927,7 @@ footer {
 .footer-bottom {
   width: 100%;
   height: 250px;
-  background-image: url("/img/footer-corner3.png");
+  background-image: url("/img/footer-bottom.png");
   background-position: bottom center;
     background-repeat: no-repeat;
 }
