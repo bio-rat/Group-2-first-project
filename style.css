@@ -833,6 +833,12 @@ div.char h2 {
   transition: 1s;
 }
 
+#char-btn {
+  position: relative;
+  top: 60px;
+  left: 1200px;
+}
+
 /* STYLE FOR section.characters sliding cards */
 .card-carousel .my-card:nth-child(0):before {
   position: absolute;
@@ -917,7 +923,7 @@ footer {
 .nav-title {
   margin-bottom: 20px;
 }
-.nav-item {
+.nav-item1 {
   font-size: 14px;
   color: #0094F3; 
 }
