@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Icon -->
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- GG fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900" rel="stylesheet">
+  <!-- Jquery -->
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="/style-store.css">
+  <!-- Font -->
+  <style>@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');</style>
+  <title>Store</title>
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+<body class="text-light">
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top font-weight-bold nav-style box-shadow">
+    <div class="container">
+      <img id="logo" src="img/logo-head.png" alt="Coderschool logo" />
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-items">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu-items">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase is-browsed" href="store.html">Store</a>
+          </li>
+          <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- NAV -->
+
+  <!-- HOT DEAL SECTION -->
+  <div id="hot-deal" class="section">
+    <!-- container -->
+    <div class="container">
+      <!-- row -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="hot-deal">
+            <ul class="hot-deal-countdown">
+              <li>
+                <div>
+                  <h3>02</h3>
+                  <span>Days</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>10</h3>
+                  <span>Hours</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>34</h3>
+                  <span>Mins</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>60</h3>
+                  <span>Secs</span>
+                </div>
+              </li>
+            </ul>
+            <h1 class="text-uppercase text-shadow font-weight-bold">hot deal this week</h1>
+            <p>New Collection Up to 50% OFF</p>
+            <a class="primary-btn cta-btn" href="#">Shop now</a>
+          </div>
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /HOT DEAL SECTION -->
+
+  <!-- NEW PRODUCTS -->
+  <div class="product">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-shadow text-light">Trending <b>Products</b></h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item carousel-item active">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-cards.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPad</h4>
+                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Sony Headphone</h4>
+                      <p class="item-price"><strike>$25.00</strike> <span>$23.99</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-cards1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Macbook Air</h4>
+                      <p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-cards2.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Nikon DSLR</h4>
+                      <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item carousel-item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Sony Play Station</h4>
+                      <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Macbook Pro</h4>
+                      <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Bose Speaker</h4>
+                      <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Samsung Galaxy S8</h4>
+                      <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item carousel-item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPhone</h4>
+                      <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Canon DSLR</h4>
+                      <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Google Pixel</h4>
+                      <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple Watch</h4>
+                      <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+          </a>
+          <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- NEW PRODUCTS -->
+
+  <!-- NEWS LETTERS -->
+  <div id="newsletter" class="section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="newsletter">
+            <h2 class="text-shadow text-light">Signup for<b> newsletter</b></h2>
+            <form>
+              <input class="input" type="email" placeholder="Enter Your Email">
+              <button class="newsletter-btn"> <i class="fab fa-500px"></i>Subscribe</button>
+            </form>
+            <ul class="newsletter-follow">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- NEWS LETTERS -->
+
+  <!-- HOT PRODUCTS -->
+  <div class="product">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-shadow text-light">HOT <b>Products</b></h2>
+        <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="0">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item carousel-item active">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-cards3.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPad</h4>
+                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Sony Headphone</h4>
+                      <p class="item-price"><strike>$25.00</strike> <span>$23.99</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-cards.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Macbook Air</h4>
+                      <p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-cards2.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Nikon DSLR</h4>
+                      <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item carousel-item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Sony Play Station</h4>
+                      <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Macbook Pro</h4>
+                      <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Bose Speaker</h4>
+                      <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Samsung Galaxy S8</h4>
+                      <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item carousel-item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPhone</h4>
+                      <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Canon DSLR</h4>
+                      <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Google Pixel</h4>
+                      <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/wolf-shirt1.png" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple Watch</h4>
+                      <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control left carousel-control-prev" href="#myCarousel2" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+          </a>
+          <a class="carousel-control right carousel-control-next" href="#myCarousel2" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HOT PRODUCTS -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container py-5">
+      <div id="footer-logo">
+        <a href="#">
+          <img src="img/logo-head.png" alt="logo" width="80px"></a>
+      </div>
+      <div class="flex-container">
+
+        <div id="div1">
+          <ul>
+            <li class="nav-title text-light">
+              <h5>COMPANY</h5>
+            </li>
+            <li><a class="nav-item1" href="#">About</a></li>
+            <li><a class="nav-item1" href="#">Jobs</a></li>
+          </ul>
+        </div>
+
+        <div id="div2">
+          <ul>
+            <li class="nav-title text-light">
+              <h5>COMMUNITIES</h5>
+            </li>
+            <li><a class="nav-item1" href="#">For Gamers</a> </li>
+            <li><a class="nav-item1" href="#">Developers</a></li>
+            <li><a class="nav-item1" href="#">Brands</a></li>
+            <li><a class="nav-item1" href="#">Investors</a></li>
+            <li><a class="nav-item1" href="#">Vendors</a></li>
+          </ul>
+        </div>
+        <div id="div3">
+          <ul>
+            <li class="nav-title text-light">
+              <h5>USEFUL LINKS</h5>
+            </li>
+            <li><a class="nav-item1" href="#">Help</a> </li>
+            <li><a class="nav-item1" href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div id="div4">
+          <ul>
+            <li class="nav-title text-light">
+              <h5>FOLLOW US</h5>
+            </li>
+            <div class="d-flex">
+              <li><a class="nav-item1" href="#">
+                  <i class="fab1 fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-item1" href="#">
+                  <i class="fab1 fa-twitter-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-item1" href="#">
+                  <i class="fab1 fa-youtube-square"></i>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"></div>
+  </footer>
+  <!-- FOOTER -->
+
+</body>
+
+</html>
