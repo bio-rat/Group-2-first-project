@@ -59,3 +59,10 @@ body {
     background-color: #efefef;
     text-align: center;
   }
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+  }
+@keyframes blinker {  
+    50% { opacity: 0; }
+  }
