@@ -11,6 +11,7 @@ dark blue #0E1223
 /* style for header */
 body {
   font-family: 'Cinzel Decorative', cursive;
+  overflow-x: hidden;
 }
 
 header {
@@ -24,17 +25,23 @@ header {
 
 #intro-section {
   background-color: #0E1223;
+  
+}
 
+.text-shadow {
+  text-shadow: 3px 3px rgb(77, 49, 2);
+  font-family: 'Cinzel Decorative', cursive!important;
 }
 
 .container {
-  /* border: 2px solid white; */
   height: inherit;
 }
 
-/* .box {
-  /* border: 2px solid white; */
-/* } */
+.product {
+  background-color: #3D4873;
+  border-bottom: 3px solid #A46B06;
+  padding-top: 50px;
+}
 
 .menu-items {
   display: flex;
@@ -53,9 +60,9 @@ header {
   display: flex;
   justify-content: flex-end;
   border-radius: 0px;
-  margin: 0px;
+  margin: 0px; 
   border: none;
-  display: flex;
+  display: flex; 
 }
 
 .box-shadow {
@@ -65,6 +72,31 @@ header {
 #logo {
   width: 50px;
 }
+.is-browsed {
+  color: #A46B06!important;
+}
+
+/*=========================================================
+	10 -> Carousel styling
+===========================================================*/
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  border-radius: 10px;
+  margin: 1px 3px;
+  height: 10px;
+  max-width: 10px;
+  border: 1px solid #FFF;
+  background-color: transparent;
+}
+
+ol.carousel-indicators li.active {
+  background-color: #fff;
+  max-width: 12px;
+  margin: 0 3px;
+  height: 12px;
+}
+
 
 /*=========================================================
 	10 -> NEWSLETTER
@@ -75,6 +107,7 @@ header {
   /* border-bottom: 3px solid #D10024; */
   background-color: #0E1223;
   /* margin-top: 30px; */
+  border-bottom: 3px solid #A46B06;
 }
 
 .newsletter {
@@ -89,22 +122,60 @@ header {
   position: relative;
   max-width: 520px;
   margin: 0 auto;
+  padding-top: 15px;
 }
 
 .newsletter form .input {
   width: calc(100% - 160px);
   margin-right: -4px;
   border-radius: 40px 0px 0px 40px;
+  height: 40px;
 }
 
 .newsletter form .newsletter-btn {
   width: 160px;
   height: 40px;
   font-weight: 700;
-  background: #D10024;
+  background: #A46B06;
   color: #FFF;
   border: none;
   border-radius: 0px 40px 40px 0px;
+  /* position: relative;
+  top: px; */
+}
+
+.newsletter-btn:hover {
+  opacity: .9;
+}
+
+.newsletter .newsletter-follow {
+  text-align: center;
+  padding-top: 30px;
+  position: relative;
+  left: -25px;
+}
+
+.newsletter .newsletter-follow li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.newsletter .newsletter-follow li a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #E4E7ED;
+  background-color: #FFF;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.newsletter .newsletter-follow li a:hover, .newsletter .newsletter-follow li a:focus {
+  background-color: #E4E7ED;
+  color: #D10024;
 }
 
 /*=========================================================
@@ -112,12 +183,13 @@ header {
 ===========================================================*/
 
 #hot-deal.section {
-  padding: 60px 0px;
-  /* margin: 30px 0px; */
-  background-color: #E4E7ED;
+  padding-top: 250px;
+  padding-bottom: 100px;
+  background-color: #0E1223;
   background-image: url('../img/hotdeal.png');
   background-position: center;
   background-repeat: no-repeat;
+  border-bottom: 3px solid #A46B06;
 }
 
 .hot-deal {
@@ -129,7 +201,7 @@ header {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: #D10024e6;
+  background: #A46B06;
   text-align: center;
   border-radius: 50%;
   margin: 0px 5px;
@@ -173,7 +245,7 @@ header {
 .primary-btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: #D10024;
+  background-color: #A46B06;
   border: none;
   border-radius: 40px;
   color: #FFF;
@@ -200,7 +272,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  margin: 30px 0 80px;
+  /* margin: 30px 0 80px; */
 }
 
 h2 b {
@@ -250,16 +322,18 @@ h2::after {
 .carousel .item h4 {
   font-size: 18px;
   margin: 10px 0;
+  color: #A46B06;
+  font-weight: bold;
 }
 
 .carousel .item .btn {
-  color: #333;
+  /* color: #fff; */
   border-radius: 0;
   font-size: 11px;
   text-transform: uppercase;
   font-weight: bold;
-  background: none;
-  border: 1px solid #ccc;
+  background: #A46B06;
+  /* border: 1px solid #ccc; */
   padding: 5px 10px;
   margin-top: 5px;
   line-height: 16px;
@@ -267,8 +341,8 @@ h2::after {
 
 .carousel .item .btn:hover,
 .carousel .item .btn:focus {
-  color: #fff;
-  background: #000;
+  color: black;
+  background-color: red;
   border-color: #000;
   box-shadow: none;
 }
@@ -281,10 +355,13 @@ h2::after {
 
 .carousel .thumb-wrapper {
   text-align: center;
+  border: #A46B06 solid 2px;
+  padding: 20px;
 }
 
 .carousel .thumb-content {
-  padding: 15px;
+  padding-bottom: 15px;
+  /* background-color: #fff; */
 }
 
 .carousel .carousel-control {
@@ -315,12 +392,12 @@ h2::after {
 }
 
 .carousel .item-price strike {
-  color: #999;
+  color: white;
   margin-right: 5px;
 }
 
 .carousel .item-price span {
-  color: #86bd57;
+  color: #FFC000;
   font-size: 110%;
 }
 
@@ -361,3 +438,48 @@ h2::after {
   font-size: 14px;
   color: #ffc000;
 }
+
+/*----------------------------*\
+	Footerr
+\*----------------------------*/
+footer {
+  width: 100%;
+  background-color: #2A2924;
+  /* text-align: center; */
+  }
+
+
+  .flex-container{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between; 
+ }
+ 
+ ul{
+  list-style-type: none;
+}
+.nav-title {
+  margin-bottom: 20px;
+}
+.nav-item1 {
+  font-size: 14px;
+  color: #0094F3; 
+}
+
+.fab1 {
+  font-size: 2.4rem;
+  padding-left: 12px; 
+  color: #0185D6;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 250px;
+  background-image: url("/img/footer-bottom.png");
+  background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+#footer-logo {
+  padding: 20px;
+ }

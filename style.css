@@ -171,4 +171,11 @@ div.char {
 div.char {
   margin: 0;
   overflow-x: hidden;
+  display: block;
+}
+
+#char-btn {
+  position: relative;
+  top: 60px;
+  left: 1200px;
 }
